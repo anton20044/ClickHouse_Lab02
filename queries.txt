@@ -1,0 +1,5 @@
+select trip_id, total_amount from trips;
+select trip_id, pickup_datetime from trips;
+select pickup_datetime, SUM(passenger_count) from trips group by pickup_datetime;
+select pickup_datetime, SUM(total_amount) from trips group by pickup_datetime;
+select COUNT(trip_id) from trips;
